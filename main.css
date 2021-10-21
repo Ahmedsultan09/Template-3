@@ -47,6 +47,14 @@ nav {
     position: relative;
 }
 
+@media only screen and (max-width: 1200px) { 
+    nav .container {
+       width: 100%;
+    }
+    
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -79,6 +87,7 @@ ul {
     
 }
 
+
  a::before {
     content: "";
     position: absolute;
@@ -104,6 +113,40 @@ left: 0;
     cursor: pointer;
 }
 
+/* Nav Media Queries */
+@media only screen and (max-width: 1200px) { 
+    nav .container {
+       width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 732px) { 
+    nav .container {
+        width: 90%;
+     }
+    .links a {
+        height: 70px;
+        padding: 0 10px;
+        font-weight: 400;
+        font-size: 13px;
+        position: relative;
+    }
+    a::before {
+        display: none;
+    }
+
+    .logo {
+        font-size: 23px;
+        font-weight: 700;
+        color:#299AF3 ;
+        cursor: pointer;
+    }
+
+    .links a:hover{
+        color: #299AF3;
+        background-color: white;
+}
 
 /* Start of Popup */
 
@@ -273,6 +316,65 @@ display: block;
     animation: mover 1s infinite  alternate;
 }
 
+/* Panel-1 Media Queries */
+
+@media only screen and (max-width: 1200px) { 
+    .panel-1 .container {
+       width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 732px) { 
+    .panel-1 .container {
+        width: 90%;
+     }
+
+     .panel-1-content {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 100px;
+     }
+
+     .panel-1-content .right-content {
+         width: 90%;
+         margin-bottom: 0;
+       
+     }
+
+     .right-content img {
+         width: 100%;
+         
+     }
+
+     .left-content {
+         width: 100%;
+     }
+
+    .left-content h1 {
+    font-size: 36px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 0;
+    }
+
+    .left-content p {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .down-icon {
+        bottom: auto;
+    }
+}
+
+
+
+/* End of panel-1 */
+
+/* Start of panel-2 */
+
 
 .panel-2 {
    background-color: #FFFFFF;
@@ -352,6 +454,21 @@ display: block;
 }
 @media only screen and (max-width: 732px) { 
     .item-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .heading-text {
+      
+        margin-top: 50px;
+        font-size: 40px;
+      
+    }
+
+   .panel-3 .container {
+        width: 100%;
+    }
+
+    .panel-2 .container {
         width: 100%;
     }
 }
